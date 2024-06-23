@@ -164,11 +164,11 @@ body {
     margin-left: 300px;
     background-color: #121421;
     display: inline-block;
-    height: 100vh;
+    height: 110vh;
     position: fixed;
     right: -100%;
     transition: all 0.2s ease-in-out;
-    margin-top: 640px;
+    margin-top: 660px;
     z-index: 1000;
   }
 
