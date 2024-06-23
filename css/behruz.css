@@ -1242,7 +1242,6 @@ input[type="text"] {
   }
 
   .add_course {
-    width: 208px;
     height: 59px;
     background: linear-gradient(115deg,
         #61b895 0%,
