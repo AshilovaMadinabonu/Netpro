@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+      :root {
+        --qora-rang: #121421;
+        --oq-rang: #fcfcfc;
+        --yordamchi-rang: #15182f;
+        --dark-blue: #2e4e9d;
+        --red: #dc251c;
+        --kulrang-stroka: #434343;
+        --sariq-: #feb700;
+      }
+
+      :root {
+        --font-family: "Inter", sans-serif;
+        --second-family: "Outfit", sans-serif;
+      }
+
+      .tajriba_box {
+        width: 531px;
+        height: 424px;
+        border: 1px solid var(--kulrang-stroka);
+        border-radius: 4px;
+        width: 531px;
+        height: 424px;
+        cursor: pointer;
+        background: var(--yordamchi-rang);
+      }
+
+      .last_step {
+        padding-top: 160px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--oq-rang);
+      }
+      .first_step {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        line-height: 156%;
+        letter-spacing: 0.05em;
+        color: var(--oq-rang);
+        opacity: 0.7;
+        padding-top: 10px;
+      }
+      .tajriba_title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        color: var(--oq-rang);
+        padding-top: 20px;
+        padding-left: 30px;
+      }
+      .tajriba_info {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--oq-rang);
+        opacity: 0.7;
+        padding-top: 20px;
+        padding-left: 30px;
+      }
+      .step_boss {
+        margin-bottom: 160px;
+      }
+      .Case_img {
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+      .job_type {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--oq-rang);
+        padding-top: 30px;
+      }
+      .job_from {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--oq-rang);
+        opacity: 0.7;
+        padding-top: 5px;
+      }
+      .job_from_sum {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: var(--oq-rang);
+        opacity: 0.7;
+      }
+      .job_big {
+        display: flex;
+        justify-content: center;
+        gap: 61px;
+      }
+      .tajriba_big {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-around;
+      }
+      @media (max-width: 1203px) {
+        .tajriba_title {
+          font-size: 16px;
+        }
+        .tajriba_info {
+          font-size: 13px;
+        }
+      }
+      @media (max-width: 1101px) {
+        .tajriba_big {
+          display: block;
+        }
+        .tajriba_big_res {
+          display: flex;
+          justify-content: center;
+        }
+        .tajriba_box {
+          margin-top: 40px;
+        }
+        .Case_img {
+          display: flex;
+          justify-content: center;
+          margin-left: 0;
+        }
+        .tajriba_title,
+        .tajriba_info {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          padding-left: 0;
+        }
+      }
+      @media (max-width: 1101px) {
+        .first_step {
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 640px) {
+        .tajriba_title {
+          font-size: 16px;
+        }
+        .tajriba_info {
+          font-size: 11px;
+        }
+        .job_big {
+          gap: 16px;
+        }
+        .job_type {
+          font-size: 12px;
+        }
+        .job_from {
+          font-size: 13px;
+        }
+        .job_from_sum {
+          font-size: 13px;
+        }
+        .tajriba_box {
+          width: 395px;
+          height: 370px;
+        }
+      }
+      @media (max-width: 512px) {
+        .first_step {
+          font-size: 10px;
+        }
+        .last_step {
+          padding-top: 45px;
+        }
+      }
+
+      @media (max-width: 416px) {
+        .tajriba_box {
+          width: 295px;
+          height: 280px;
+        }
+        .tajriba_info {
+          font-size: 8px;
+        }
+        .job_big {
+          gap: 12px;
+        }
+        .job_type {
+          font-size: 9px;
+        }
+        .job_from {
+          font-size: 9px;
+        }
+        .job_from_sum {
+          font-size: 9px;
+        }
+      }
+      @media (max-width: 303px) {
+        .tajriba_box {
+          width: 225px;
+          /* height: 344px; */
+        }
+        .back_text {
+          font-size: 16 px;
+          width: 107px;
+        }
+        .back {
+          height: 430px;
+        }
+        .tajriba_title {
+          font-size: 10px;
+        }
+        .tajriba_info {
+          font-size: 6px;
+        }
+        .job_big {
+          gap: 12px;
+        }
+        .job_type {
+          font-size: 6px;
+        }
+        .job_from {
+          font-size: 6px;
+        }
+        .job_from_sum {
+          font-size: 6px;
+        }
+      }
+      .feature_img {
+        display: flex;
+        margin: 0 auto;
+      }
+      @media (max-width: 320px) {
+        .last_step {
+          font-size: 32px;
+        }
+        .first_step {
+          font-size: 9px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="step_boss">
+      <p class="last_step" id="tex4t24">Keyingi qadam</p>
+      <p class="first_step max[749px]:text-[12px]" id="text24">
+        Birinchi kursdan so'ng siz qaerga va qanday davom etishni tanlashingiz
+        mumkin
+      </p>
+      <section class="tajriba_big_res">
+        <section class="tajriba_big">
+          <div class="tajriba_box">
+            <div class="Case_img"><img src="./images/Case.svg" alt="" /></div>
+            <p class="tajriba_title">Bandlikga yordam berish</p>
+            <p class="tajriba_info">
+              Bizning maqsadimiz sizga ta'lim va kasbiy rivojlanish <br />
+              maqsadlaringizni ro’yobga chiqaradigan va o’qish davomida <br />
+              yaxshi natijalar ko’rsatgan NetPro o’quv markazining <br />
+              muvaffaqiyatli bitiruvchilariga ishga joylashishda faol <br />
+              yordam beramiz.
+            </p>
+            <div class="job_big">
+              <div>
+                <p class="job_type">Ish turi</p>
+                <p class="job_from">Ofis ishi</p>
+              </div>
+              <div>
+                <p class="job_type">Ish haqqi</p>
+                <p class="job_from">2 000 000 dan</p>
+                <p class="job_from_sum">7 000 000 gacha</p>
+              </div>
+              <div>
+                <p class="job_type">Ish tajribasi</p>
+                <p class="job_from">1 yildan 3 yil gacha</p>
+              </div>
+            </div>
+          </div>
+          <div class="tajriba_box">
+            <div class="Case_img">
+              <img src="./images/case.2.svg" alt="" />
+            </div>
+            <p class="tajriba_title">Amaliyotlarda ishtirok etish</p>
+            <p class="tajriba_info">
+              Amaliyot ko'nikmalarni takomillashtirish va bilim olishning
+              <br />
+              kalitidir. Faol ishtirok etish orqali siz takrorlash, tajriba va
+              <br />
+              fikr-mulohazalar orqali o'rganasiz va boshqa ishtirokchilar
+              <br />
+              bilan birgalikda siz loyihalar g'oyalarini amalga oshirasiz va
+              <br />
+              olingan bilimlarni amalda ishlab chiqasiz.
+            </p>
+            <div class="job_big">
+              <div>
+                <p class="job_type">Ish turi</p>
+                <p class="job_from">Ofis ishi</p>
+              </div>
+              <div>
+                <p class="job_type">Ish haqqi</p>
+                <p class="job_from">2 000 000 dan</p>
+                <p class="job_from_sum">7 000 000 gacha</p>
+              </div>
+              <div>
+                <p class="job_type">Ish tajribasi</p>
+                <p class="job_from">1 yildan 3 yil gacha</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
