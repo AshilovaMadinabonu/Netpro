@@ -57,10 +57,12 @@ body {
 }
 
 .menu_title li:hover a {
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -96,10 +98,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,10 +126,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -162,7 +168,7 @@ body {
     position: fixed;
     right: -100%;
     transition: all 0.2s ease-in-out;
-    margin-top: 50px;
+    margin-top: 580px;
     z-index: 1000;
   }
 
@@ -192,7 +198,7 @@ body {
     margin-left: 207px;
   }
 
-  #check:checked~.menu_title {
+  #check:checked ~ .menu_title {
     right: 0;
   }
 
@@ -225,10 +231,12 @@ body {
   border-radius: 4px;
   padding: 20px 28px;
   height: 64px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -241,7 +249,7 @@ body {
   border: none;
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
   #text7 {
     font-size: 17px;
   }
@@ -257,10 +265,12 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -279,24 +289,27 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .header-btn2 {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -543,7 +556,6 @@ body {
 }
 
 @media (max-width: 850px) {
-
   .max-guruh,
   .max-guruh2 {
     display: block;
@@ -663,7 +675,6 @@ body {
 }
 
 @media (max-width: 1220px) {
-
   .tez-tez-box,
   .tez-tez-boxs {
     display: block;
@@ -760,7 +771,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--oq-rang);
 }
-
+.kurslar:hover,
+.max:hover {
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .max {
   font-family: var(--font-family);
   font-weight: 400;
@@ -768,6 +790,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--oq-rang);
   opacity: 0.7;
+}
+
+.guruh-child:hover {
+  border-radius: 8px;
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
 }
 
 footer {

@@ -14,7 +14,10 @@
   --font-family: "Inter", sans-serif;
   --second-family: "Outfit", sans-serif;
 }
-
+.tajriba_box:hover{
+  transform: scale(1.1);
+  box-shadow: 0px -2px 20px 10px #434443;
+}
 .tajriba_box {
   width: 531px;
   height: 424px;
@@ -24,6 +27,7 @@
   height: 424px;
   cursor: pointer;
   background: var(--yordamchi-rang);
+  transition: 0.8s;
 }
 
 .last_step {
