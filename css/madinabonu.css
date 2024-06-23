@@ -168,7 +168,7 @@ body {
     position: fixed;
     right: -100%;
     transition: all 0.2s ease-in-out;
-    margin-top: 660px;
+    margin-top: 700px;
     z-index: 1000;
   }
 
@@ -195,7 +195,7 @@ body {
 
   .close_btn {
     color: white;
-    margin-left: 230px;
+    margin-left: 250px;
   }
 
   #check:checked ~ .menu_title {
