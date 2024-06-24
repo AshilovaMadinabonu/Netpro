@@ -9,7 +9,7 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 :root {
@@ -34,7 +34,6 @@ body {
   background-size: 100px 80px;
 }
 
-
 .menu_title {
   display: flex;
   justify-content: center;
@@ -53,10 +52,12 @@ body {
 }
 
 .wrapper16 li:hover a {
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -73,10 +74,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,10 +102,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -138,7 +143,6 @@ body {
   transition: 0.15s ease-in-out;
   position: relative;
   transition: all 0.3s ease;
-
 }
 
 .menu_logo12 {
@@ -161,7 +165,7 @@ body {
     z-index: 1;
   }
 
-  #active:checked~.wrapper16 {
+  #active:checked ~ .wrapper16 {
     clip-path: circle(75%);
   }
 
@@ -213,10 +217,12 @@ body {
   }
 
   .wrapper16 li:hover a {
-    background: linear-gradient(115deg,
-        #61b895 0%,
-        #149ed5 52.5%,
-        #ff1cf7 99.99%);
+    background: linear-gradient(
+      115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -251,10 +257,12 @@ body {
   border-radius: 4px;
   padding: 20px 28px;
   height: 64px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -283,10 +291,12 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -305,10 +315,12 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -318,10 +330,12 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -568,7 +582,6 @@ body {
 }
 
 @media (max-width: 850px) {
-
   .max-guruh,
   .max-guruh2 {
     display: block;
@@ -688,7 +701,6 @@ body {
 }
 
 @media (max-width: 1220px) {
-
   .tez-tez-box,
   .tez-tez-boxs {
     display: block;
@@ -789,10 +801,12 @@ body {
 .kurslar:hover,
 .max:hover {
   cursor: pointer;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -810,10 +824,12 @@ body {
 .guruh-child:hover {
   cursor: pointer;
   border-radius: 8px;
-  background: linear-gradient(115deg,
-      #61b895 0%,
-      #149ed5 52.5%,
-      #ff1cf7 99.99%);
+  background: linear-gradient(
+    115deg,
+    #61b895 0%,
+    #149ed5 52.5%,
+    #ff1cf7 99.99%
+  );
 }
 footer {
   margin-top: 42px;
@@ -845,8 +861,8 @@ footer {
     width: 45px;
   }
 }
-@media (max-width:350px) {
-  .sms{
+@media (max-width: 450px) {
+  .sms {
     display: block;
   }
 }
