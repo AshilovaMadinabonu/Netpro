@@ -9,7 +9,9 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --qora-rang: #121421;
   --oq-rang: #fcfcfc;
@@ -32,12 +34,6 @@ body {
   background-size: 100px 80px;
 }
 
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .menu_title {
   display: flex;
@@ -46,70 +42,47 @@ body {
   align-items: center;
 }
 
-.menu_title li a {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  color: var(--oq-rang);
-  transition: 0.15s ease-in-out;
-  position: relative;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.menu_title li:hover a {
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+.menu-btn {
+  display: none;
+}
+
+.wrapper16 li:hover a {
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.menu_logo {
-  color: white;
-}
-
-#check {
-  display: none;
-}
-
-.close_btn {
-  left: 0;
-}
-
-.close_btn,
-.open_btn {
-  color: white;
-  font-size: 30px;
-  display: none;
-}
-
-.select-menu {
+.select-menu16 {
   cursor: pointer;
   position: relative;
   text-align: center;
 }
 
-.select {
+.select16 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.options-list {
+.options-list16 {
   position: absolute;
   background-color: #fff;
   width: 100%;
@@ -126,28 +99,26 @@ body {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s ease-in-out;
 }
 
-.options-list::-webkit-scrollbar {
+.options-list16::-webkit-scrollbar {
   width: 4px;
   background-color: #eee;
 }
 
-.options-list::-webkit-scrollbar-thumb {
+.options-list16::-webkit-scrollbar-thumb {
   background-color: #149ed5;
 }
 
-.options-list.options-visible {
+.options-list16.options-visible {
   height: 100px;
   width: 65px;
 }
@@ -158,48 +129,97 @@ body {
   background: var(--kulrang-stroka);
 }
 
+.wrapper16 ul li a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--oq-rang);
+  transition: 0.15s ease-in-out;
+  position: relative;
+  transition: all 0.3s ease;
+
+}
+
+.menu_logo12 {
+  display: none;
+}
 @media (max-width: 820px) {
-  .menu_title {
-    width: 100%;
-    margin-left: 300px;
-    background-color: #121421;
-    display: inline-block;
-    height: 110vh;
-    position: fixed;
-    right: -100%;
-    transition: all 0.2s ease-in-out;
-    margin-top: 700px;
-    z-index: 1000;
-  }
-
-  .options-list {
-    margin-left: 122px;
-  }
-
-  .menu_title li a {
-    color: white;
-    display: flex;
-    padding-top: 50px;
-    font-size: 20px;
-    justify-content: center;
-  }
-
-  .menu_title li:hover a {
-    color: grey;
-  }
-
-  .close_btn,
-  .open_btn {
+  .menu_logo12 {
     display: block;
   }
 
-  .close_btn {
-    color: white;
-    margin-left: 250px;
+  .wrapper16 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1c1e2b;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.8s ease-in-out;
+    z-index: 1;
   }
 
-  #check:checked ~ .menu_title {
-    right: 0;
+  #active:checked~.wrapper16 {
+    clip-path: circle(75%);
+  }
+
+  .menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background: #1c1e2b;
+    display: block;
+  }
+
+  .wrapper16 ul {
+    position: absolute;
+    top: 36%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .wrapper16 ul li {
+    margin: 15px 0;
+    padding-top: 20px;
+  }
+
+  .wrapper16 ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+
+  .menu_title {
+    display: block;
+  }
+
+  .wrapper16 li:hover a {
+    background: linear-gradient(115deg,
+        #61b895 0%,
+        #149ed5 52.5%,
+        #ff1cf7 99.99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .select-menu {
@@ -231,12 +251,10 @@ body {
   border-radius: 4px;
   padding: 20px 28px;
   height: 64px;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -265,12 +283,10 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -289,12 +305,10 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -304,12 +318,10 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -556,6 +568,7 @@ body {
 }
 
 @media (max-width: 850px) {
+
   .max-guruh,
   .max-guruh2 {
     display: block;
@@ -675,6 +688,7 @@ body {
 }
 
 @media (max-width: 1220px) {
+
   .tez-tez-box,
   .tez-tez-boxs {
     display: block;
@@ -771,18 +785,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--oq-rang);
 }
+
 .kurslar:hover,
 .max:hover {
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  cursor: pointer;
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .max {
   font-family: var(--font-family);
   font-weight: 400;
@@ -793,15 +808,13 @@ body {
 }
 
 .guruh-child:hover {
+  cursor: pointer;
   border-radius: 8px;
-  background: linear-gradient(
-    115deg,
-    #61b895 0%,
-    #149ed5 52.5%,
-    #ff1cf7 99.99%
-  );
+  background: linear-gradient(115deg,
+      #61b895 0%,
+      #149ed5 52.5%,
+      #ff1cf7 99.99%);
 }
-
 footer {
   margin-top: 42px;
   background-color: #15182f;
@@ -820,11 +833,6 @@ footer {
     display: flex;
     justify-content: center;
   }
-
-  .sms {
-    display: block;
-  }
-
   .max {
     font-size: 14px;
   }
@@ -835,6 +843,11 @@ footer {
 
   .sms img {
     width: 45px;
+  }
+}
+@media (max-width:350px) {
+  .sms{
+    display: block;
   }
 }
 

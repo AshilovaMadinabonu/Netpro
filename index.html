@@ -30,35 +30,51 @@
 
 <body>
   <header>
-    <ul class="menu">
-      <li class="menu_logo">
+    <input type="checkbox" id="active" class="hidden">
+    <label class="svg-container menu-btn" onclick="toggleSVG()" for="active" > <svg id="svg1" width="24" height="24" viewBox="0 0 24 24" fill="#fff"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.99997 1.46732e-10H7.11997C7.91793 -7.88103e-06 8.68302 0.317892 9.24602 0.883388C9.80901 1.44888 10.1235 2.21538 10.12 3.01333V7.12C10.12 8.77685 8.77682 10.12 7.11997 10.12H2.99997C1.34311 10.12 -3.13633e-05 8.77685 -3.13633e-05 7.12V3.01333C-0.00357787 2.21538 0.310926 1.44888 0.87392 0.883388C1.43691 0.317892 2.202 -7.88103e-06 2.99997 1.46732e-10ZM7.11997 8.10667C7.66925 8.09949 8.11279 7.65595 8.11997 7.10667V3.01333C8.11997 2.46105 7.67225 2.01333 7.11997 2.01333H2.99997C2.44768 2.01333 1.99997 2.46105 1.99997 3.01333V7.10667C2.00715 7.65595 2.45069 8.09949 2.99997 8.10667H7.11997Z"
+          fill="#FCFCFC" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16.88 1.46732e-10H21C21.798 -7.88103e-06 22.5631 0.317892 23.126 0.883388C23.689 1.44888 24.0035 2.21538 24 3.01333V7.12C24 8.77685 22.6569 10.12 21 10.12H16.88C15.2231 10.12 13.88 8.77685 13.88 7.12V3C13.88 1.34315 15.2231 1.46732e-10 16.88 1.46732e-10ZM21 8.10667C21.5493 8.09949 21.9928 7.65595 22 7.10667V3.01333C22 2.46105 21.5523 2.01333 21 2.01333H16.88C16.3277 2.01333 15.88 2.46105 15.88 3.01333V7.10667C15.8872 7.65595 16.3307 8.09949 16.88 8.10667H21Z"
+          fill="#FCFCFC" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.99997 13.88H7.11997C8.77682 13.88 10.12 15.2231 10.12 16.88V21C10.12 22.6569 8.77682 24 7.11997 24H2.99997C2.202 24 1.43691 23.6821 0.87392 23.1166C0.310926 22.5511 -0.00357787 21.7846 -3.13633e-05 20.9867V16.88C-3.13633e-05 15.2231 1.34311 13.88 2.99997 13.88ZM7.11997 21.9867C7.67225 21.9867 8.11997 21.539 8.11997 20.9867V16.88C8.11279 16.3307 7.66925 15.8872 7.11997 15.88H2.99997C2.45069 15.8872 2.00715 16.3307 1.99997 16.88V20.9867C1.99997 21.539 2.44768 21.9867 2.99997 21.9867H7.11997Z"
+          fill="#FCFCFC" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16.88 13.88H21C22.6568 13.88 24 15.2231 24 16.88V20.9867C24.0035 21.7846 23.689 22.5511 23.126 23.1166C22.563 23.6821 21.7979 24 21 24H16.88C16.082 24 15.3169 23.6821 14.7539 23.1166C14.1909 22.5511 13.8764 21.7846 13.88 20.9867V16.88C13.88 15.2231 15.2231 13.88 16.88 13.88ZM21 21.9867C21.5523 21.9867 22 21.539 22 20.9867V16.88C21.9928 16.3307 21.5493 15.8872 21 15.88H16.88C16.3307 15.8872 15.8872 16.3307 15.88 16.88V20.9867C15.88 21.539 16.3277 21.9867 16.88 21.9867H21Z"
+          fill="#FCFCFC" />
+      </svg></label>
+    <div class="menu_logo12">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+    <div class="menu wrapper16">
+      <div class="menu_logo max-[820px]:hidden">
         <img src="./images/logo.svg" alt="" />
-      </li>
-      <input type="checkbox" id="check" />
-      <span class="menu_title">
-        <label for="check" class="close_btn"><i class="fa-solid fa-xmark"></i></label>
-        <li><a href="#" id="text">Kurs haqida</a></li>
-        <li><a href="#" id="text2">Biz haqimizda</a></li>
-        <li><a href="#" id="text3">O’quvchilar fikri</a></li>
-        <li><a href="#" id="text4">Kontakt</a></li>
+      </div>
+      <ul class="menu_title">
+        <li><a href="#kurshaqida" id="text">Kurs haqida</a></li>
+        <li><a href="#bizhaqimizda" id="text2">Biz haqimizda</a></li>
+        <li><a href="#oquvchilarfikri" id="text3">O’quvchilar fikri</a></li>
+        <li><a href="#kontakt" id="text4">Kontakt</a></li>
         <li>
-          <div class="select-menu lang">
-            <div class="select">
+          <div class="select-menu16 lang">
+            <div class="select16">
               <span>UZB</span>
             </div>
-            <div class="options-list lang">
+            <div class="options-list16 lang">
               <div class="options btn2" lang="eng">ENG</div>
               <div class="options btn2" lang="rus">RUS</div>
               <div class="options btn2" lang="uz">UZB</div>
             </div>
           </div>
         </li>
-      </span>
-      <label for="check" class="open_btn"><img src="./images/menu.svg" alt="" /></label>
-    </ul>
+      </ul>
+    </div>
   </header>
   <main>
-    <section class="back">
+    <section class="back" >
       <p class="header-school" id="text5">
         NetPro IT School bilan <br />
         kelajakni birga quring
@@ -76,14 +92,14 @@
         </div>
       </div>
     </section>
-    <section class="max-[970px]:flex justify-center">
+    <section class="max-[970px]:flex justify-center" id="kurshaqida">
       <section class="hidden max-[970px]:block max-[970px]:mt-[800px]">
         <div class="slidee">
           <div class="job_img">
             <img src="./images/Code.svg" alt="" />
           </div>
           <p class="job_name" id="text8">Frontend dasturlash</p>
-          <p class="info_text w-[253px] max-[300px]:w-[197px]" id="text9">
+          <p class="info_text w-[220px] max-[300px]:w-[197px]" id="text9">
             Veb-sahifa va veb-ilovalarning <br />
             foydalanuvchiga koʻrinadigan <br />
             qismini hosil qilish sohasidir.
@@ -127,7 +143,7 @@
             <img src="./images/Frame.svg" alt="" />
           </div>
           <p class="job_name" id="text12">UX UI Dizayn</p>
-          <p class="info_text w-[283px] max-[300px]:w-[220px]" id="text13">
+          <p class="info_text w-[200px] max-[300px]:w-[220px]" id="text13">
             Tadqiqot va fikr-mulohazalarni <br />
             foydalanuvchilar ehtiyojlarini qondirish <br />
             interfeyslarni yaratishga yordam beradi.
@@ -171,7 +187,7 @@
             <img src="./images/Capa_1.svg" alt="" />
           </div>
           <p class="job_name">Backend</p>
-          <p class="info_text w-[320px] max-[300px]:w-[210px]" id="text16">
+          <p class="info_text w-[200px] max-[300px]:w-[210px]" id="text16">
             Maʼlumotlarni veb-brauzerning <br />
             foydalanuvchi koʻradigan qismiga <br />
             qanday uzatilishini taʼminlaydi.
@@ -283,7 +299,7 @@
         </div>
       </section>
     </section>
-    <section class="body max-[970px]:hidden">
+    <section class="body max-[970px]:hidden" id="kurshaqida">
       <div class="slider-container">
         <div class="slider">
           <div class="slide">
@@ -491,7 +507,6 @@
             <input type="text" id="tolov-miqdori" name="tolov-miqdori" placeholder="10 000" />
             <span>sum</span>
           </div>
-
           <button type="submit" class="submit-btn">To’lov uchun</button>
         </form>
       </div>
@@ -507,7 +522,7 @@
           <div class="tajriba_box">
             <div class="Case_img"><img src="./images/Case.svg" alt="" /></div>
             <p class="tajriba_title" id="text46">Bandlikga yordam berish</p>
-            <p class="tajriba_info max-[400px]:w-[180px]" id="text47">
+            <p class="tajriba_info max-[400px]:w-[238px]" id="text47">
               Bizning maqsadimiz sizga ta'lim va kasbiy rivojlanish <br />
               maqsadlaringizni ro’yobga chiqaradigan va o’qish davomida <br />
               yaxshi natijalar ko’rsatgan NetPro o’quv markazining <br />
@@ -535,7 +550,7 @@
               <img src="./images/case.2.svg" alt="" />
             </div>
             <p class="tajriba_title" id="text55">Amaliyotlarda ishtirok etish</p>
-            <p class="tajriba_info max-[400px]:w-[180px]" id="text56">
+            <p class="tajriba_info max-[400px]:w-[238px]" id="text56">
               Amaliyot ko'nikmalarni takomillashtirish va bilim olishning
               <br />
               kalitidir. Faol ishtirok etish orqali siz takrorlash, tajriba va
@@ -790,7 +805,7 @@
       <div class="video_res">
         <div class="video_text ">
           <div>
-            <p class="bio_text w-[320px] max-[400px]:pt-[50px]" id="text92">
+            <p class="bio_text w-[250px] max-[400px]:pt-[50px]" id="text92">
               Kurs haqida video <br />
               tanishtiruv
             </p>
@@ -817,7 +832,7 @@
             <img src="./images/play_btn.svg" alt="Play Button" />
           </div>
           <video id="myVideo" class="video-controls" controls>
-            <source src="./images/Course_video.MP4" type="video/mp4" />
+            <source src="./images/video-netpro.mp4" type="video/mp4" />
             Ваш браузер не поддерживает видео.
           </video>
           <button class="close-button" onclick="closeVideo()">
@@ -845,7 +860,7 @@
         </button>
       </div>
     </section>
-    <section>
+    <section id="bizhaqimizda">
       <div>
         <p class="teachers_text max-[345px]:text-[28px] max-[700px]:pt-[20px]" id="text97">O'qutuvchilarimiz</p>
       </div>
@@ -939,7 +954,7 @@
         </div>
       </section>
     </section>
-    <section>
+    <section id="oquvchilarfikri">
       <p class="qanday" id="text110">
         Platformada <br class="qanday-br" />
         o'qitish qanday <br class="qanday-br" />
@@ -1230,7 +1245,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer id="kontakt">
     <section class="footer-menu">
       <ul class="flex">
         <div>
@@ -1579,8 +1594,8 @@
         prevEl: ".swiper-button-prev",
       },
     });
-  </script> 
-  
+  </script>
+
 </body>
 
 </html>

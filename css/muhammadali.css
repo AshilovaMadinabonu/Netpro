@@ -14,10 +14,12 @@
   --font-family: "Inter", sans-serif;
   --second-family: "Outfit", sans-serif;
 }
-.tajriba_box:hover{
+
+.tajriba_box:hover {
   transform: scale(1.1);
   box-shadow: 0px -2px 20px 10px #434443;
 }
+
 .tajriba_box {
   width: 531px;
   height: 424px;
@@ -39,6 +41,7 @@
   letter-spacing: 0.02em;
   color: var(--oq-rang);
 }
+
 .first_step {
   font-family: var(--font-family);
   font-weight: 400;
@@ -50,6 +53,7 @@
   opacity: 0.7;
   padding-top: 10px;
 }
+
 .tajriba_title {
   font-family: var(--font-family);
   font-weight: 500;
@@ -59,6 +63,7 @@
   padding-top: 20px;
   padding-left: 30px;
 }
+
 .tajriba_info {
   font-family: var(--font-family);
   font-weight: 400;
@@ -73,13 +78,16 @@
   justify-content: center;
   margin: 0 auto;
 }
+
 .step_boss {
   margin-bottom: 160px;
 }
+
 .Case_img {
   margin-top: 30px;
   margin-left: 30px;
 }
+
 .job_type {
   font-family: var(--font-family);
   font-weight: 400;
@@ -89,6 +97,7 @@
   color: var(--oq-rang);
   padding-top: 30px;
 }
+
 .job_from {
   font-family: var(--font-family);
   font-weight: 400;
@@ -99,6 +108,7 @@
   opacity: 0.7;
   padding-top: 5px;
 }
+
 .job_from_sum {
   font-family: var(--font-family);
   font-weight: 400;
@@ -108,40 +118,49 @@
   color: var(--oq-rang);
   opacity: 0.7;
 }
+
 .job_big {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
+
 .tajriba_big {
   display: flex;
   margin-top: 60px;
   justify-content: space-around;
 }
+
 @media (max-width: 1203px) {
   .tajriba_title {
     font-size: 16px;
   }
+
   .tajriba_info {
     font-size: 13px;
   }
 }
+
 @media (max-width: 1101px) {
   .tajriba_big {
     display: block;
   }
+
   .tajriba_big_res {
     display: flex;
     justify-content: center;
   }
+
   .tajriba_box {
     margin-top: 40px;
   }
+
   .Case_img {
     display: flex;
     justify-content: center;
     margin-left: 0;
   }
+
   .tajriba_title,
   .tajriba_info {
     display: flex;
@@ -149,7 +168,7 @@
     justify-content: center;
     padding-left: 0;
   }
-  
+
 }
 
 @media (max-width: 1101px) {
@@ -157,35 +176,44 @@
     font-size: 12px;
   }
 }
+
 @media (max-width: 640px) {
   .tajriba_title {
     font-size: 16px;
   }
+
   .tajriba_info {
     font-size: 11px;
     width: 325px;
   }
+
   .job_big {
     gap: 16px;
   }
+
   .job_type {
     font-size: 12px;
   }
+
   .job_from {
     font-size: 13px;
   }
+
   .job_from_sum {
     font-size: 13px;
   }
+
   .tajriba_box {
     width: 395px;
     height: 370px;
   }
 }
+
 @media (max-width: 512px) {
   .first_step {
     font-size: 10px;
   }
+
   .last_step {
     padding-top: 45px;
   }
@@ -196,60 +224,87 @@
     width: 295px;
     height: 314px;
   }
+
   .tajriba_info {
     font-size: 8px;
   }
+
   .job_big {
     gap: 12px;
   }
+
   .job_type {
     font-size: 9px;
   }
+
   .job_from {
     font-size: 9px;
   }
+
   .job_from_sum {
     font-size: 9px;
   }
 }
+
 @media (max-width: 303px) {
   .tajriba_box {
     width: 225px;
     /* height: 344px; */
   }
+
   .back_text {
     font-size: 16 px;
     width: 107px;
   }
-  
+
+  .Case_img {
+    margin-top: 12px;
+  }
+
   .tajriba_title {
     font-size: 10px;
   }
+
   .tajriba_info {
     font-size: 6px;
   }
+
   .job_big {
     gap: 12px;
   }
+
   .job_type {
     font-size: 6px;
   }
+
   .job_from {
     font-size: 6px;
   }
+
   .job_from_sum {
     font-size: 6px;
   }
 }
+
 .feature_img {
   display: flex;
   margin: 0 auto;
 }
+
 @media (max-width: 320px) {
   .last_step {
     font-size: 32px;
   }
+
   .first_step {
     font-size: 9px;
+  }
+
+  .tajriba_box {
+    width: 290px;
+    height: 305px;
+  }
+  .Case_img{
+    margin-top: 12px;
   }
 }
